@@ -1,0 +1,19 @@
+<form method="POST" action="index">
+  <%= @message %>
+  <div>
+    <input type="radio" id="contactChoice1" name="baseformat" value="email">
+    <label for="contactChoice1">メール</label>
+    <input type="radio" id="contactChoice2" name="baseformat" value="excel">
+    <label for="contactChoice2">Excel</label>
+    <input type="radio" id="contactChoice3" name="baseformat" value="pdf">
+    <label for="contactChoice3">PDF</label>
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+  <p>工事名：<%= @const_name %></p>
+  <p>ビル：<%= @build_floar %></p>
+  <p>開始日：<%= @start_date %></p>
+  <p>終了日：<%= @end_date %></p>
+  <p>メモ：<%= @memo %></p>
+</form>
